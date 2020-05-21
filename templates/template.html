@@ -1,0 +1,22 @@
+<!-- templates/mensagem.html -->
+
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<h1>Template Template</h1>
+
+<form action='/mensagem/gravar' method='post'>
+  <p>
+    <label for='usuario'>Usuário:</label>
+    <input id='usuario' type='text' name='usuario'>
+  </p>
+  <p>
+    <label for='texto'>Mensagem:</label>
+    <textarea id='texto' name='texto'></textarea>
+  </p>
+  <p>
+    <input type='submit' value='Enviar'>
+  </p>
+</form>
+
+{% endblock %}

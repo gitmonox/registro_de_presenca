@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='/static/css/style.css' type='text/css' rel='stylesheet'>
+    <title>Formulário</title>
+  </head>
+  <header>
+    <h1 id="cabeçalho">Formulário</h1>
+  </header>
+
+  <form id="formulario" action='/presenca/gravar' method='post'>
+    <p class="emails"></p>
+    <br>
+    <label class="emails" for='email'>E-mail:</label>
+    <br>
+    <input id='box_email' type='text' name='email'>
+    <br><br>
+    <input id="radio_presente" type="radio" id="presente" name="presenca" value="presente">
+    <label id="presente" for="presente">Presente</label>
+    <input id="radio_ausente" type="radio" id="ausente" name="presenca" value="ausente">
+    <label id="ausente" for="ausente">Ausente</label>
+    <br><br>
+    <p id="pergunta">Fale sobre o funcionamento do CSS:</p>
+    <label id="text_resposta" for='pergunta'>Resposta:</label>
+    <br>
+    <input id='box_resposta' type='text' name='resposta'>
+    <br><br><br><br>
+    <label for='comentario'>Comentarios Sobre a página:</label>
+    <br>
+    <textarea id='comentario' type='text' name='comentario'></textarea>
+    <br><br>
+    <input type='submit' value='Enviar'>
+  </form>
+</html>
+{% endblock %}

@@ -1,0 +1,36 @@
+<!-- templates/presenca.html -->
+
+
+{% block conteudo %}
+<html lang="en">
+  <head>
+ 
+    <link rel='stylesheet' href='/static/css/rolf.css'>
+  
+  </head>
+
+  <body>
+
+<h1>Rota presença</h1>
+
+
+<form class="formulario" action='/presenca/gravar' method='post'>
+  <p class='teste'>
+    <label class="rolf" for='usuario'>Usuário:</label>
+    <input id='usuario' type='text' name='usuario'>
+  </p>
+  <p>
+    <label for='texto'>Mensagem:</label>
+    <textarea id='texto' name='texto'></textarea>
+  </p>
+  <p>Esteve presente?</p>
+  <input type="radio" id="presenca" name="presente" value="presente">
+  <label for="sim">Sim</label>
+  <input type="radio" id="ausente" name="presente" value="ausente">
+  <label for="sim">Nao</label><br>
+  <p>
+    <input type='submit' value='Enviar'>
+  </p>
+</form>
+
+{% endblock %}
