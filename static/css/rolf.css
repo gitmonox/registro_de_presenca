@@ -4,3 +4,16 @@ h3 {
   justify-content: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.perfil{
+  color: blue;
+}
+
+.texto{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.divrolf{
+  width: 400px;
+  padding: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
